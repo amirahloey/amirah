@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background: bisque;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+/* Header */
+.header {
+	width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+	display: flex;
+    align-items: center;  /* Vertically aligns content */
+    justify-content: center; /* Horizontally centers content */
+    flex-wrap: wrap; 
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Navigation Bar */
+.navbar {
+    overflow: hidden;
+    background-color: rosybrown;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Content Area */
+.content {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.centercolumn {
+    width: 70%;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.centercolumn img {
+    padding-top: 3%;
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.centercolumn h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.centercolumn p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Button */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #D8BFD8;
+    color: rgb(110, 9, 88);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #C3A3C6;
+}
+
+.gallery img {
+    width: 200px; 
+    height: 200px; /* Ensures a uniform height */
+    object-fit: cover; /* Keeps the aspect ratio while fitting the image within the dimensions */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rosybrown;
+    color: white;
+    border-radius: 5px;
+    margin-top: auto;
+}
